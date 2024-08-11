@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./", // 출력 경로를 현재 디렉토리로 설정
+    "allowJs": true, // JavaScript 파일을 컴파일하도록 허용
+    "target": "es6", // ES6로 타겟 설정 (필요에 따라 변경 가능)
+    "module": "commonjs", // 모듈 시스템을 CommonJS로 설정
+    "strict": true, // 엄격한 타입 검사 활성화
+    "esModuleInterop": true // ES 모듈과 CommonJS 모듈 간 호환성 설정
+  },
+  "include": [
+    "script.ts" // 컴파일할 파일 지정
+  ],
+  "exclude": [
+    "node_modules" // node_modules 폴더는 제외
+  ]
+}

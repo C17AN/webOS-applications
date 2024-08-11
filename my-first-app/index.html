@@ -8,31 +8,12 @@ SPDX-License-Identifier: Apache-2.0
 <html>
   <head>
     <title>new app</title>
-    <style type="text/css">
-      body {
-        width: 100%;
-        height: 100%;
-        background-color: #202020;
-      }
-
-      div {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        display: table;
-      }
-
-      h1 {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        color: #ffffff;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <script src="webOSTVjs-1.2.10/webOSTV.js" charset="utf-8"></script>
   <script src="webOSTVjs-1.2.10/webOSTV-dev.js" charset="utf-8"></script>
+  <script src="./script.js"></script>
   <script type="text/javascript">
     //sample code for calling LS2 API
     webOS.service.request("luna://com.palm.systemservice", {
@@ -45,14 +26,13 @@ SPDX-License-Identifier: Apache-2.0
         console.log("Failed to getTime");
       },
     });
-
-    console.log("hi");
-    console.log(document);
   </script>
 
   <body>
-    <div>
-      <h1>Hello, World!!</h1>
+    <div class="container">
+      <h1 class="title">사랑하는 연인, 가족의 기념일을 축하해 보세요</h1>
+      <input class="message-input" placeholder="생일 축하합니다" />
+      <a href="./start.html">이동</a>
     </div>
   </body>
 </html>
