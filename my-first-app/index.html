@@ -13,26 +13,31 @@ SPDX-License-Identifier: Apache-2.0
 
   <script src="webOSTVjs-1.2.10/webOSTV.js" charset="utf-8"></script>
   <script src="webOSTVjs-1.2.10/webOSTV-dev.js" charset="utf-8"></script>
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
+  <script src="./reset.css"></script>
+  <script src="./style.css"></script>
   <script type="text/javascript">
     //sample code for calling LS2 API
-    webOS.service.request("luna://com.palm.systemservice", {
-      method: "clock/getTime",
-      parameters: {},
-      onSuccess: function (args) {
-        console.log("UTC:", args.utc);
-      },
-      onFailure: function (args) {
-        console.log("Failed to getTime");
-      },
-    });
+    // webOS.service.request("luna://com.palm.systemservice", {
+    //   method: "clock/getTime",
+    //   parameters: {},
+    //   onSuccess: function (args) {
+    //     console.log("UTC:", args.utc);
+    //   },
+    //   onFailure: function (args) {
+    //     console.log("Failed to getTime");
+    //   },
+    // });
   </script>
 
   <body>
-    <div class="container">
-      <h1 class="title">사랑하는 연인, d가족의 기념일을 축하해 보세요</h1>
-      <input class="message-input" placeholder="생일 축하합니다" />
-      <a href="./start.html">이동</a>
+    <div class="container title-container">
+      <main class="wrap">
+        <h1 class="title">사랑하는 연인, 가족들에게</h1>
+        <h1 class="title title-second">사랑의 메시지를 남겨 보세요</h1>
+        <!-- <input class="message-input" placeholder="생일 축하합니다" tabindex="0" /> -->
+        <button class="button-start" tabindex="0">시작하기</button>
+      </main>
     </div>
   </body>
 </html>
