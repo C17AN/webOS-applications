@@ -34,6 +34,14 @@
 
 - 위의 webOS Studio의 package manager를 사용해 설치하자.
 
+---
+
+### 실행
+
+- 코드를 수정하면 시뮬레이터에도 변경사항이 바로 반영된다.
+
+![실행 방법](./assets/launch.png)
+
 ### 결과
 
 ![결과](./assets/result.png)
